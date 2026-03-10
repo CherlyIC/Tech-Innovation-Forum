@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom'
 function App () {
   const [form, setForm] = useState({
 
-    first-Name: "",
-    last-Name: "",
+    firstName: "",
+    lastName: "",
     email:"",
     phone:"",
     ticketType:""
@@ -41,7 +41,7 @@ function App () {
         <Route path="/my-registration" element={
           <MyRegistrationPage formData={formData} setFormData={setFormData} setIsRegistered={setIsRegistered}/>
         }/>
-        
+
       </Routes>
         
     </BrowserRouter>
