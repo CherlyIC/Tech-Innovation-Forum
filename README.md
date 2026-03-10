@@ -1,18 +1,38 @@
-# React + Vite
+# Tech Innovation Forum 2026 - Registration System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page event registration system built with React and React Router.
 
-Currently, two official plugins are available:
+### Installation
+```bash
+npm install
+npm run dev
+##  Key Feature — Returning User Detection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+When a user revisits the application after previously registering,
+the system automatically checks the browser's localStorage to see
+whether a registration record already exists.
 
-## React Compiler
+### How It Works
+```
+User opens the app
+        ↓
+App checks localStorage
+        ↓
+Data found?          No data?
+    ↓                    ↓
+Redirect to          Show registration
+/my-registration     form normally
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### What The Returning User Page Shows
+- A notification that the user has already registered
+- Their full registration details
+- The ticket type they selected
+- Any additional notes they provided
 
-Note: This will impact Vite dev & build performances.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+- React
+- React Router DOM
+- Tailwind CSS
+- localStorage 
