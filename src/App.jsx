@@ -16,6 +16,7 @@ function App () {
     lastName: "",
     email:"",
     phone:"",
+    organization:"",
     ticketType:"Standard"
   })
 
@@ -37,7 +38,7 @@ function App () {
       <Routes>
         <Route path="/" element={< EventInformation/>}/>
         <Route path="/register" element={
-          isRegistered ? <Navigate to="/my-registration"/> : <Register Form={form} setForm={setForm}/>
+          isRegistered ? <Navigate to="/my-registration"/> : <Register form={form} setForm={setForm}/>
          } 
         />
         <Route path="/review" element={<Review form={form}/>}/>
