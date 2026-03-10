@@ -1,6 +1,8 @@
+import React from "react";
 import carine from "../assets/speakers/carine.jpeg"
 import david from "../assets/speakers/david.png"
 import paula from "../assets/speakers/paula.jpeg"
+
 
 
 const speakers = [
@@ -32,7 +34,7 @@ function SpeakersSection () {
         <p className="text-gray-400 text-center mb-12">Learn from the best mind in fintech and technology across africa</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-6">
-          { SpeakersSection.map((speaker , index) => (
+          { speakers.map((speaker , index) => (
             <div key={index} className="bg-[#1a2744] border border-[#2d3a5e] rounded-lg p-6 text-center hover:border-[#c9a84c] transition colors duration-300">
               <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-[#c9a84c]">
                 <img

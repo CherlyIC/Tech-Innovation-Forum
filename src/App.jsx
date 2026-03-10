@@ -1,6 +1,13 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Navbar  from './components/Navbar'
+import EventInformation from './pages/EventInformation'
+import Register from './pages/Register'
+import Review from './pages/Review'
+import Confirmation from './pages/Confirmation'
+import MyRegistration from './pages/MyRegistration'
+import SpeakersSection from './components/SpeakersSection'
 
 function App () {
   const [form, setForm] = useState({
@@ -9,7 +16,7 @@ function App () {
     lastName: "",
     email:"",
     phone:"",
-    ticketType:""
+    ticketType:"Standard"
   })
 
   const [isRegistered, setIsRegistered] = useState(false)
@@ -30,16 +37,16 @@ function App () {
       <Routes>
         <Route path="/" element={< EventInformation/>}/>
         <Route path="/register" element={
-          isRegistered ? <Navigate to="/my-registration"/> : <RegisterPage FormData={formData} setFormData={setFormData}/>
+          isRegistered ? <Navigate to="/my-registration"/> : <Register Form={form} setForm={setForm}/>
          } 
         />
-        <Route path="/review" element={<ReviewPage formData={formData}/>}/>
+        <Route path="/review" element={<Review form={form}/>}/>
         <Route path="/confirmation" element={
-          <ConfirmationPage formData= {formData} setIsRegistered={setIsRegistered} />
+          <Confirmation form= {form} setIsRegistered={setIsRegistered} />
         } />
 
         <Route path="/my-registration" element={
-          <MyRegistrationPage formData={formData} setFormData={setFormData} setIsRegistered={setIsRegistered}/>
+          <MyRegistration  form={form} setForm={setForm} setIsRegistered={setIsRegistered}/>
         }/>
 
       </Routes>
