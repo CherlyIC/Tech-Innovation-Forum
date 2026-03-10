@@ -9,6 +9,7 @@ import Confirmation from './pages/Confirmation'
 import MyRegistration from './pages/MyRegistration'
 import SpeakersSection from './components/SpeakersSection'
 
+
 function App () {
   const [form, setForm] = useState({
 
@@ -25,7 +26,7 @@ function App () {
   useEffect(() => {
     const save = localStorage.getItem("registration")
     if(save){
-      setFormDate(JSON.parse(save))
+      setForm(JSON.parse(save))
       setIsRegistered(true)
     }
 
