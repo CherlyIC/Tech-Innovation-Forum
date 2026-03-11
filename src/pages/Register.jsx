@@ -28,7 +28,7 @@ function Register ({form, setForm}) {
         <form onSubmit={handleSubmit} className="bg-[#0f1520] border border-[#2d3a5e] rounded-xl p-8 space-y-6">
 
           <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >
+            <label className="block text-sm font-semibold text-white mb-2" >
               First Name
             </label>
             <input
@@ -36,12 +36,12 @@ function Register ({form, setForm}) {
               name="firstName"
               value={form.firstName}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
               placeholder="Enter your first name"
             />
           </div>
            <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >
+            <label className="block text-sm font-semibold text-white mb-2" >
               Last Name
             </label>
             <input
@@ -49,13 +49,13 @@ function Register ({form, setForm}) {
               name="lastName"
               value={form.lastName}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
               placeholder="Enter your last name"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >
+            <label className="block text-sm font-semibold text-white mb-2" >
               Email Address
             </label>
             <input
@@ -63,12 +63,12 @@ function Register ({form, setForm}) {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
               placeholder="Enter your email address"
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >
+            <label className="block text-sm font-semibold text-white mb-2" >
               Phone Number
             </label>
             <input
@@ -76,13 +76,13 @@ function Register ({form, setForm}) {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
               placeholder="Enter your phone number"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >
+            <label className="block text-sm font-semibold text-white mb-2" >
               Organization/institution
             </label>  
             <input
@@ -90,19 +90,19 @@ function Register ({form, setForm}) {
               name="organization"
               value={form.organization}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e]  rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
               placeholder="Enter your organization or institution"
             />
 
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-300 mb-2" >Ticket Type</label>
+            <label className="block text-sm font-semibold text-white mb-2" >Ticket Type</label>
             <select
               name="ticketType"
               value={form.ticketType}
               onChange={handleChange}
-              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
+              className="bg-[#0f1520] border border-[#2d3a5e] rounded-lg py-2 px-4  text-white focus:outline-none focus:ring-2 focus:ring-[#c9a84c]"
             >
               <option value="Standard">Standard</option>
               <option value="VIP">VIP</option>

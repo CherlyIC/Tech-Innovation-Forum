@@ -8,12 +8,12 @@ function Review({ form }) {
     <div className="bg-[#0a0e1a] min-h-screen py-16 px-5">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-[#c9a84c] text-sm tracking-widest uppercase mb-2">
-            Step 2 of 2
-          </p>
           <h1 className="text-4xl font-extrabold text-white mb-3">
             Review Your Registration
           </h1>
+          <p className="text-[#c9a84c] text-sm tracking-widest uppercase mb-2">
+            Step 2 of 2
+          </p>
           <p className="text-gray-400">
             Please confirm your details before submitting
           </p>

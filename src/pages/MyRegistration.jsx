@@ -42,25 +42,11 @@ function MyRegistration({ form, setForm, setIsRegistered }) {
           Ticket: <span className="text-[#c9a84c] font-bold">{form.ticketType}</span>
         </p>
 
-        {/* Buttons */}
-        <div className="flex gap-4">
-          <button
-            onClick={() => navigate("/register")}
-            className="flex-1 border border-[#c9a84c] text-[#c9a84c] font-bold py-3 rounded-lg uppercase tracking-widest hover:bg-[#c9a84c] hover:text-[#0a0e1a] transition-colors duration-300"
-          >
-             Edit
-          </button>
-          <button
-            onClick={handleCancel}
-            className="flex-1 border border-red-500 text-red-500 font-bold py-3 rounded-lg uppercase tracking-widest hover:bg-red-500 hover:text-white transition-colors duration-300"
-          >
-            ✕ Cancel
-          </button>
-        </div>
+       
 
       </div>
     </div>
   )
 }
 
-export default MyRegistrationPage
+export default MyRegistration
