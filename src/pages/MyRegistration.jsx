@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"
 
-function MyRegistrationPage({ form, setForm, setIsRegistered }) {
+function MyRegistration({ form, setForm, setIsRegistered }) {
   const navigate = useNavigate()
 
   const handleCancel = () => {
